@@ -4,10 +4,8 @@
 
 Run the following commands to install Nginx:
 
-    ```bash
     sudo apt update
     sudo apt install nginx
-    ```
 
 ## Location
 
@@ -17,7 +15,7 @@ Run the following commands to install Nginx:
     -   For multiple domains, use virtual hosts.
 
 -   **Create a Folder and HTML File:**
-    -   Create a directory: /var/www/sample-directory
+    -   Create a directory: /var/www/sample
     -   Add an HTML file to this directory.
 
 ## Virtual Host Configuration
@@ -37,7 +35,7 @@ Run the following commands to install Nginx:
 
         server_name YOUR_IP;
 
-        root /var/www/sample-directory;
+        root /var/www/sample;
         index index.html;
 
         location / {
@@ -74,6 +72,4 @@ Run the following commands to install Nginx:
 
 To view error logs, use:
 
-    ```bash
     sudo tail -f /var/log/nginx/error.log
-    ```
