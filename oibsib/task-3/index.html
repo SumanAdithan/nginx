@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="./assets/img/logo.png"
+            type="image/x-icon"
+        />
+        <title>Temperature Converter</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="app">
+            <div class="form-container">
+                <h1 class="heading">
+                    <span>Temperature Converter</span>
+                    <span class="heading-logo">
+                        <img src="./assets/img/logo.png" alt="logo" />
+                    </span>
+                </h1>
+                <form action="#" id="form" class="form">
+                    <input
+                        id="temperature"
+                        type="text"
+                        placeholder="Enter a Temperature"
+                        autocomplete="off"
+                        required
+                    />
+                    <select id="unit">
+                        <option value="C">Celsius</option>
+                        <option value="F">Fahrenheit</option>
+                        <option value="K">Kelvin</option>
+                    </select>
+                    <button type="submit">Convert</button>
+                </form>
+                <h2 class="sub-heading">Result</h2>
+                <div id="result" class="result-container">
+                    <ul class="result-list">
+                        <li class="result-item">
+                            <span>Celsius:</span>
+                            <span id="celsius"></span>
+                        </li>
+                        <li class="result-item">
+                            <span>Fahrenheit:</span>
+                            <span id="fahrenheit"></span>
+                        </li>
+                        <li class="result-item">
+                            <span>Kelvin:</span>
+                            <span id="kelvin"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>

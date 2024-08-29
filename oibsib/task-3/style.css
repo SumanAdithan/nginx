@@ -1,0 +1,141 @@
+/* global */
+:root {
+    --primary: #e65f78;
+    --white: #ffffff;
+    --white-dim: #f7f7f7;
+    --gray: #cccccc;
+    --background-primary: #333333;
+    --background-secondary: #1f1f1f;
+}
+
+/* reset and base style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+    background: var(--background-primary);
+    color: var(--white);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* app */
+.app {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    background: var(--background-secondary);
+    padding: 4rem 2rem;
+    gap: 1.5rem;
+    border-radius: 10px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    color: var(--primary);
+    padding: 1rem;
+}
+
+.heading-logo {
+    width: 5rem;
+    height: 3rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid var(--primary);
+    background: var(--background-primary);
+    color: var(--gray);
+    font-weight: 500;
+}
+
+select {
+    padding: 1rem;
+    background: var(--background-primary);
+    border: 2px solid var(--primary);
+    outline: none;
+    font-size: 1rem;
+    color: var(--gray);
+}
+
+button {
+    margin-top: 0.5rem;
+    max-width: 300px;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: var(--primary);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.sub-heading {
+    color: var(--primary);
+}
+
+.result-container {
+    border: 2px solid var(--primary);
+    padding: 2rem;
+}
+
+.result-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.result-item > span {
+    display: block;
+}
+
+@media (min-width: 500px) {
+    .heading-logo {
+        width: 3rem;
+    }
+}
